@@ -83,7 +83,7 @@ fi
 # Generate script that runs every shutdown event
 argon_create_file $shutdownscript
 
-echo "#!/usr/bin/python" >> $shutdownscript
+echo "#!/usr/bin/python3" >> $shutdownscript
 echo 'import sys' >> $shutdownscript
 echo 'import smbus2' >> $shutdownscript
 echo 'import RPi.GPIO as GPIO' >> $shutdownscript
@@ -106,7 +106,7 @@ sudo chmod 755 $shutdownscript
 
 argon_create_file $powerbuttonscript
 
-echo "#!/usr/bin/python" >> $powerbuttonscript
+echo "#!/usr/bin/python3" >> $powerbuttonscript
 echo 'import smbus2' >> $powerbuttonscript
 echo 'import RPi.GPIO as GPIO' >> $powerbuttonscript
 echo 'import os' >> $powerbuttonscript
